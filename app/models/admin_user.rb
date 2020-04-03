@@ -7,4 +7,8 @@ class AdminUser < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
+
+  def password_required?
+    new_record? ? false : super
+  end
 end
