@@ -24,6 +24,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_storage_validations (0.8.8)
+      rails (>= 5.2.0)
     activeadmin (2.7.0)
       arbre (~> 1.2, >= 1.2.1)
       formtastic (~> 3.1)
@@ -118,6 +120,9 @@ GEM
       activesupport (>= 4.1)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    image_processing (1.10.3)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     inherited_resources (1.11.0)
       actionpack (>= 5.0, < 6.1)
       has_scope (~> 0.6)
@@ -213,6 +218,8 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    ruby-vips (2.0.17)
+      ffi (~> 1.9)
     ruby_dep (1.5.0)
     rubyzip (2.3.0)
     sass (3.7.4)
@@ -275,6 +282,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_storage_validations
   activeadmin
   arctic_admin
   bootsnap (>= 1.1.0)
@@ -285,6 +293,7 @@ DEPENDENCIES
   devise
   draper
   faker
+  image_processing
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.8)
