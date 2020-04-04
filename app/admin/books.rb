@@ -22,6 +22,7 @@ ActiveAdmin.register Book do
       a href: admin_book_path(book), class: 'book-img' do
         img src: url_for(book.image.variant(combine_options: { resize: '200x282^', gravity: 'center', extent: '200x282' }))
         h2 book.title
+        span "(#{number_to_currency(book.price)})"
       end
     end
   end
